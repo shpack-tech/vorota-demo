@@ -1,0 +1,116 @@
+/* Навигация по сайту */
+.site_navigation {
+	padding: 160px 0 30px 0;
+}
+.site_navigation_content {
+}
+
+/* Карточки из каталога */
+.goods_catalog {
+	padding: 0 0 110px 0;
+}
+.goods_catalog_content {
+}
+
+.goods_catalog_title {
+	font-weight: bold;
+	font-size: 60px;
+	margin: 0 0 50px 0;
+}
+.goods_catalog_flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.demo_back1 {
+	background: url(../images/demo1.jpg) center no-repeat;
+}
+.demo_back2 {
+	background: url(../images/demo2.jpg) center no-repeat;
+}
+.demo_back3 {
+	background: url(../images/demo3.jpg) center no-repeat;
+}
+.demo_back4 {
+	background: url(../images/demo4.jpg) center no-repeat;
+}
+.demo_back5 {
+	background: url(../images/demo5.jpg) center no-repeat;
+}
+.demo_back6 {
+	background: url(../images/demo6.jpg) center no-repeat;
+}
+.demo_back7 {
+	background: url(../images/demo7.jpg) center no-repeat;
+}
+.demo_back8 {
+	background: url(../images/demo8.jpg) center no-repeat;
+}
+.goods_catalog_flex_element {
+	margin: 0 20px 40px 20px;
+	width: 400px;
+	height: 300px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: #ffffff;
+	border-radius: 15px;
+	transition: all 0.2s ease;
+	background-size: cover;
+}
+.goods_catalog_flex_element:hover {
+	transform: scale(1.1);
+}
+.goods_catalog_flex_element:nth-child(1),
+.goods_catalog_flex_element:nth-child(2) {
+	width: 620px;
+	height: 500px;
+}
+
+@media (max-width: 1440px) {
+	.goods_catalog_flex_element:nth-child(1),
+	.goods_catalog_flex_element:nth-child(2) {
+		width: 600px;
+	}
+	.goods_catalog_flex_element {
+		width: 380px;
+	}
+}
+@media (max-width: 1280px) {
+	.goods_catalog_flex_element:nth-child(1),
+	.goods_catalog_flex_element:nth-child(2) {
+		height: 300px;
+		width: 380px;
+	}
+}
+@media (max-width: 1024px) {
+	.goods_catalog_flex {
+		width: 100%;
+	}
+	.goods_catalog_flex_element,
+	.goods_catalog_flex_element:nth-child(1),
+	.goods_catalog_flex_element:nth-child(2) {
+		/* display: block; */
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+}
+@media (max-width: 768px) {
+	.goods_catalog_flex_element,
+	.goods_catalog_flex_element:nth-child(1),
+	.goods_catalog_flex_element:nth-child(2) {
+		height: 130px;
+	}
+	.goods_catalog_title {
+		font-size: 20px;
+	}
+	.goods_catalog {
+		padding: 0 0 50px 0;
+	}
+	.site_navigation {
+		padding: 100px 0 20px 0;
+	}
+}

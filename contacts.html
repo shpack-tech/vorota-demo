@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product_card.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/promo.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <title>catalog</title>
+</head>
+<body>
+    <header class="head">
+        <div class="head_content wrapped">
+            <div class="head_logo"><img src="images/logo.svg" alt="Ворота Сибири"></div>
+            <nav class="head_menu">
+                <ul class="menu_list">
+                    <li class="menu_item drops">
+                        <a href="#">Каталог</a>
+                        <div class="dropper">
+                            <a href="#">Гаражные ворота</a>
+                            <a href="#">Промышленные ворота</a>
+                            <a href="#">Двери</a>
+                            <a href="#">Ворота для паркинга</a>
+                            <a href="#">Сервисное обслуживание</a>
+                            <a href="#">Приводы</a>
+                        </div>
+                    </li>
+                    <li class="menu_item drops">
+                        <a href="#">Проекты</a>
+                        <div class="dropper">
+                            <a href="#">Автосалон Мерседес</a>
+                            <a href="#">Автосалон МБ-Трек</a>
+                            <a href="#">Ограждение участка</a>
+                            <a href="#">Автосалон Фольксваген</a>
+                            <a href="#">Автотехцентр Манн</a>
+                        </div>
+                    </li>
+                    <li class="menu_item"><a href="#">Портфолио</a></li>
+                    <li class="menu_item"><a href="#">Блог</a></li>
+                    <li class="menu_item"><a href="#">Акции</a></li>
+                    <li class="menu_item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a class="head_button btn">Заказать</a>
+        </div>
+        <div class="head_content_mobile wrapped">
+            <div class="head_logo"><img src="images/logo.svg" alt="Ворота Сибири"></div>
+            <img src="images/menu_burger.svg" alt="">
+        </div>
+    </header>
+    <section class="our_contacts_general">
+        <div class="our_contacts_general wrapped">
+            <div class="our_contacts_title">
+                Наши контакты
+            </div>
+            <div class="our_contacts_text">Профессиональный подбор, продажа и установка гаражных и промышленных ворот, дверей 
+                и автоматики Hörmann. 
+                Ищите лучшие ворота? Мы поможем Вам с выбором, рассчитаем 
+                стоимость, привезем и установим гаражные и промышленные ворота, а также входные двери. </div>
+        </div>
+    </section>
+    <section class="geolocation">
+        <div class="geolocation_content wrapped">
+            <div id="map"></div>
+            <div class="our_contacts_info">
+                <div class="our_contacts_info_title">Адрес</div>
+                <p>Тюменская область, ХМАО-Югра, 
+                    г.Сургут, ул.Производственная, 1
+                    </p>
+                    <div class="our_contacts_info_title">Номера телефонов</div>
+                     <a href="tel:+73462620304">+7 346 262 03 04</a>
+                     <a href="tel:+73462601505">+7 346 260 15 05</a>
+                     <a href="tel:+73462950613">+7 346 295 06 13</a>
+                 </в>
+                 <div class="our_contacts_info_title">Почта</div>
+
+                 <a class="our_contacts_info_title" href="mailto:sale@vorota-surgut.ru">sale@vorota-surgut.ru</a>
+
+                 <div class="work_time">Обращайтесь к нам с понедельника по пятницу с 9:00 до 18:00</div>
+
+            </div>
+        </div>
+    </section>
+    <section class="form_contacts">
+        <div class="form_contacts_content wrapped">
+            <div class="our_contacts_title">
+                Написать сообщение
+            </div>
+            <form id="contact_email" class="form_contacts_form">
+                <div class="form_inputer">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name" id="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="form_inputer">
+                    <label for="email">Ваш email</label>
+                    <input type="text" name="email" id="email" placeholder="Введите ваш email">
+                </div>
+                <div class="form_inputer">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input type="text" name="phone" id="phone" placeholder="Введите ваш номер телефона">
+                </div>
+                <div class="form_inputer">
+                    <label for="theme">Тема письма</label>
+                    <input type="text" name="theme" id="theme" placeholder="Введите тему письма">
+                </div>
+                <div class="form_message">
+                    <label for="theme">Сообщение</label>
+                    <textarea type="" name="theme" id="theme" placeholder="Тут будет ваше сообщение"  ></textarea>
+                </div>
+            </form>
+            <div class="privacy_policy">
+                <input type="checkbox" name="check_policy" id="check_policy">
+                <label for="check_policy">Я принимаю условия <a href="">передачи информации</a></label>
+            </div>
+            <button form="contact_email" type="submit" class="contact_message_btn btn">Отправить сообщение</button>
+        </div>
+    </section>
+    <section class="mobile_map wrapped">
+        <div id="mobile_map" style="width: 100%; height: 100%;"></div>
+    </section>
+    <footer>
+        <div class="footer_content wrapped">
+            <div class="footer_general f_col">
+                <div class="head_logo"><img src="images/logo.svg" alt=""></div>
+                <p>Делаем ворота 
+                    на заказ с 2002 года</p>
+                <p>© 2021 Ворота Сибири</p>
+            </div>
+            <div class="footer_main f_col">
+                <a class="f_title" href="#">Главная</a>
+            </div>
+            <div class="footer_catalog f_col">
+                <a class="f_title" href="#">Каталог</a>
+            </div>
+            <div class="footer_contacts f_col">
+                <div class="f_title">Контакты</div>
+                <a href="tel:+73462620304">+7 346 262 03 04</a>
+                <a href="tel:+73462601505">+7 346 260 15 05</a>
+                <a href="tel:+73462950613">+7 346 295 06 13</a>
+            </div>
+            <div class="footer_for_client f_col">
+                <div class="f_title">Клиентам</div>
+                <a href="#">Скачать каталог</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+    <div class="secret_overlay"></div>
+    <div class="secret_menu">
+        <div class="secret_links">
+            <a href="#">Каталог</a>
+            <a href="#">Проекты</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Блог</a>
+            <a href="#">Акции</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="closer">
+            X
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="central_map.js"></script>
+<script src="mobile_map.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
