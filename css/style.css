@@ -641,6 +641,7 @@ img {
 	/* font-size: 20px; */
 	height: 100%;
 	width: 100%;
+	padding: 100px 0 0 0;
 }
 .video-content:before {
 	z-index: -1;
@@ -1365,6 +1366,10 @@ footer {
 	.wrapped {
 		width: 425px;
 	}
+	.video-content {
+	
+	padding: 66px 0 0 0;
+}
 	/* заголовок с линией становится без линии */
 	.grid_title {
 		border: none;
